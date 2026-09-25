@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer Shield / Hexagonal Focus Ring -->
+    <path
+        android:pathData="M54,23 L79,37 L79,69 L54,85 L29,69 L29,37 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#38BDF8"
+        android:fillColor="#15142E" />
+
+    <!-- Forge Flame & Neural Focus Diamond (Center) -->
+    <path
+        android:pathData="M54,30 L73,42 L73,66 L54,78 L35,66 L35,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="35"
+                android:startY="30"
+                android:endX="73"
+                android:endY="78"
+                android:type="linear">
+                <item android:color="#06B6D4" android:offset="0.0" />
+                <item android:color="#8B5CF6" android:offset="0.7" />
+                <item android:color="#A855F7" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Core Lightning / Spark of Insight -->
+    <path
+        android:pathData="M56,38 L45,53 L53,53 L51,70 L63,51 L55,51 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Corner Focus Target Accents -->
+    <path
+        android:pathData="M24,42 L24,32 L34,32"
+        android:strokeWidth="2"
+        android:strokeColor="#8B5CF6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M84,42 L84,32 L74,32"
+        android:strokeWidth="2"
+        android:strokeColor="#8B5CF6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M24,66 L24,76 L34,76"
+        android:strokeWidth="2"
+        android:strokeColor="#06B6D4"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M84,66 L84,76 L74,76"
+        android:strokeWidth="2"
+        android:strokeColor="#06B6D4"
+        android:strokeLineCap="round" />
+</vector>

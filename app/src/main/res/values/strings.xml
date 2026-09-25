@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FocusForge</string>
+    <string name="accessibility_service_description">FocusForge uses Accessibility Service exclusively during active study sessions to detect when a blocked distracting application is opened and return you safely to your Focus Zone.</string>
+    <string name="notification_channel_name">Focus Session Active</string>
+    <string name="notification_channel_description">Notifications for ongoing study timers and focus sessions.</string>
+</resources>

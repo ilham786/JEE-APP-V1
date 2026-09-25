@@ -1,0 +1,6 @@
+{
+  "name": "FocusForge",
+  "description": "Elite Study Operating System for IIT-JEE and NEET with Real Device Focus & Blocker",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
