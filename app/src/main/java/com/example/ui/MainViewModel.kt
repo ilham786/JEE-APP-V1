@@ -311,11 +311,14 @@ class MainViewModel(
                     mode = mode
                 )
             }
-            lower.contains("calculate") || lower.contains("speed of light") || lower.contains("constant") -> {
+            lower.contains("calculate") || lower.contains("speed of light") || lower.contains("constant") || lower.contains("planck") || lower.contains("electron") -> {
+                val matched = com.example.data.PhysicalConstants.all.find { 
+                    lower.contains(it.name.lowercase()) || lower.contains(it.symbol.lowercase()) 
+                } ?: com.example.data.PhysicalConstants.all.first()
                 CoachMessage(
                     sender = "coach",
-                    content = "Physical Constants Verified:\n• c = 2.998 × 10⁸ m/s\n• h = 6.626 × 10⁻³⁴ J·s\n• e = 1.602 × 10⁻¹⁹ C\n• ε₀ = 8.854 × 10⁻¹² F/m\n• R = 8.314 J/(mol·K)",
-                    formula = "c = 3.0 \\times 10^8 \\text{ m/s}, \\quad h = 6.626 \\times 10^{-34} \\text{ J}\\cdot\\text{s}",
+                    content = "${matched.name} (${matched.symbol}):\n• Value: ${matched.value} ${matched.unit}\n• Standard Notation: ${matched.formatted} ${matched.unit}\nVerified for NTA IIT-JEE and NEET-UG computations.",
+                    formula = matched.latex,
                     mode = mode
                 )
             }

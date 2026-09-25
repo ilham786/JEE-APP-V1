@@ -22,7 +22,11 @@ object CurriculumData {
         BlockedAppEntity("com.zhiliaoapp.musically", "TikTok", "Short Video", isBlocked = true, isDefault = true, domainFallback = "tiktok.com"),
         BlockedAppEntity("com.pinterest", "Pinterest", "Media & Photos", isBlocked = true, isDefault = true, domainFallback = "pinterest.com"),
         BlockedAppEntity("com.valvesoftware.android.steam.community", "Steam", "Gaming Community", isBlocked = true, isDefault = true, domainFallback = "steamcommunity.com"),
-        BlockedAppEntity("com.ninegag.android.app", "9GAG", "Memes & Distraction", isBlocked = true, isDefault = true, domainFallback = "9gag.com")
+        BlockedAppEntity("com.ninegag.android.app", "9GAG", "Memes & Distraction", isBlocked = true, isDefault = true, domainFallback = "9gag.com"),
+        BlockedAppEntity("com.whatsapp", "WhatsApp", "Messaging & Distraction", isBlocked = true, isDefault = true, domainFallback = "web.whatsapp.com"),
+        BlockedAppEntity("org.telegram.messenger", "Telegram", "Messaging & Distraction", isBlocked = true, isDefault = true, domainFallback = "web.telegram.org"),
+        BlockedAppEntity("com.roblox.client", "Roblox", "Gaming & Entertainment", isBlocked = true, isDefault = true, domainFallback = "roblox.com"),
+        BlockedAppEntity("com.chess", "Chess.com", "Gaming & Board", isBlocked = true, isDefault = true, domainFallback = "chess.com")
     )
 
     fun getInitialJeeChapters(): List<SyllabusChapterEntity> = listOf(

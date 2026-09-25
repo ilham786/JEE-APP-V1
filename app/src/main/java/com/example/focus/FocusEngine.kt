@@ -67,7 +67,11 @@ object FocusEngine {
                 "com.zhiliaoapp.musically",
                 "com.pinterest",
                 "com.valvesoftware.android.steam.community",
-                "com.ninegag.android.app"
+                "com.ninegag.android.app",
+                "com.whatsapp",
+                "org.telegram.messenger",
+                "com.roblox.client",
+                "com.chess"
             )
         )
     }

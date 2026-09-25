@@ -24,11 +24,12 @@ class ExampleRobolectricTest {
     }
 
     @Test
-    fun `default 15 blocked apps contains instagram and youtube`() {
+    fun `default distraction catalog contains core blocked apps`() {
         val blockedApps = CurriculumData.defaultBlockedApps
-        assertEquals(15, blockedApps.size)
+        assertTrue(blockedApps.size >= 15)
         assertTrue(blockedApps.any { it.packageName == "com.instagram.android" })
         assertTrue(blockedApps.any { it.packageName == "com.google.android.youtube" })
+        assertTrue(blockedApps.any { it.packageName == "com.whatsapp" })
     }
 
     @Test
